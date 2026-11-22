@@ -16,9 +16,15 @@ namespace assignment04
 
             #region question 2
             //Add an internal int copiesInStock = 5; field to Book.Print it from Main.Does it compile? Why?
-            book mybook = new book();
-            Console.WriteLine(mybook.copiesInStock);
+            //book mybook = new book();
+            //Console.WriteLine(mybook.copiesInStock);
             // yes it will compile because te access modifier of th copiesInStock is[internal]
+            #endregion
+
+            #region question 3
+            //Add a public string Title; field to Book.Set it and print it from Main.
+            book mybook = new book();
+            Console.WriteLine(mybook.Title);
             #endregion
         }
     }
