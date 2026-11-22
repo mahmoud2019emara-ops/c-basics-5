@@ -29,8 +29,18 @@ namespace assignment04
 
             #region question 4
             //Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book, assign it Genre.Science, and print it.
-            genre g = genre.Science;
-            Console.WriteLine(g);
+            //genre g = genre.Science;
+            //Console.WriteLine(g);
+            #endregion
+
+            #region question 5
+            //Using the Genre enum above, print the underlying int value of Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int. 
+            genre g1=(genre)0;
+            Console.WriteLine(g1);
+            genre g2 = (genre)1;
+            Console.WriteLine(g2);
+            genre g3 = (genre)2;
+            Console.WriteLine(g3);
             #endregion
         }
     }
