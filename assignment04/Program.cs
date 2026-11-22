@@ -61,10 +61,26 @@ namespace assignment04
 
             #region question 8
             //Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and print the result.
-            string genreText = "Science";
-            genre g = (genre)Enum.Parse(typeof(genre), genreText);
-            Console.WriteLine(g);
+            //string genreText = "Science";
+            //genre g = (genre)Enum.Parse(typeof(genre), genreText);
+            //Console.WriteLine(g);
 
+            #endregion
+
+            #region question 9
+            //Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to attempt the conversion.
+            // Print "Unknown genre" if it fails.
+            string genreText = "Mystery";
+            bool isgenre = Enum.TryParse(typeof(genre), genreText,out object result);
+            if (isgenre) 
+            {
+                genre g = (genre)result;
+                Console.WriteLine(g);
+            }
+            else 
+            {
+                Console.WriteLine("Unknown genre");
+            }
             #endregion
         }
     }
