@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignment04
 {
@@ -45,10 +46,17 @@ namespace assignment04
 
             #region question 6
             //Given int genreNumber = 1;, cast it into a Genre value and print the result.
-            int genreNumber = 1;
-            genre g = (genre)genreNumber;
+            //int genreNumber = 1;
+            //genre g = (genre)genreNumber;
+            //Console.WriteLine(g);
+
+            #endregion
+
+            #region question 7
+            //Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+            genre genre = genre.Fiction;
+            string g = genre.ToString();
             Console.WriteLine(g);
-               
             #endregion
         }
     }
