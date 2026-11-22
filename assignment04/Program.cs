@@ -23,8 +23,14 @@ namespace assignment04
 
             #region question 3
             //Add a public string Title; field to Book.Set it and print it from Main.
-            book mybook = new book();
-            Console.WriteLine(mybook.Title);
+            //book mybook = new book();
+            //Console.WriteLine(mybook.Title);
+            #endregion
+
+            #region question 4
+            //Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book, assign it Genre.Science, and print it.
+            genre g = genre.Science;
+            Console.WriteLine(g);
             #endregion
         }
     }
