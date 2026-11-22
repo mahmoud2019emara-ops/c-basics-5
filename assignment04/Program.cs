@@ -35,12 +35,20 @@ namespace assignment04
 
             #region question 5
             //Using the Genre enum above, print the underlying int value of Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int. 
-            genre g1=(genre)0;
-            Console.WriteLine(g1);
-            genre g2 = (genre)1;
-            Console.WriteLine(g2);
-            genre g3 = (genre)2;
-            Console.WriteLine(g3);
+            //genre g1=(genre)0;
+            //Console.WriteLine(g1);
+            //genre g2 = (genre)1;
+            //Console.WriteLine(g2);
+            //genre g3 = (genre)2;
+            //Console.WriteLine(g3);
+            #endregion
+
+            #region question 6
+            //Given int genreNumber = 1;, cast it into a Genre value and print the result.
+            int genreNumber = 1;
+            genre g = (genre)genreNumber;
+            Console.WriteLine(g);
+               
             #endregion
         }
     }
